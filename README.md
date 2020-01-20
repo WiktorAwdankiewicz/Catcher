@@ -1,2 +1,3 @@
 # Catcher
-PAM2
+Projekt Aplikacji Mobilnej 2
+projekt na studia
