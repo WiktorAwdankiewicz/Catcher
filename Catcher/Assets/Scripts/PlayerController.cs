@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
     }
 
+    //funkcje wykorzystywane przez przyciski na ekranie do poruszania sie
     public void MoveRight()
     {
         rigidBody.velocity = new Vector2(PlayerSpeed, 0.0f);
@@ -52,15 +53,9 @@ public class PlayerController : MonoBehaviour
         else
         {
             StopMoving();
-        }
-        rigidBody.position = new Vector3
-        (
-            Mathf.Clamp (rigidBody.position.x, boundary.xMin, boundary.xMax),
-            0.0f,
-            0.0f
-        );*/
+        }*/
 
-        //Movement Postaci na Android
+        //Movement Postaci na Android - bez przyciskow na ekranie
         /*if (Input.touchCount > 0)
         {
             //Vector3 touchPosition = Input.GetTouch(0).position;
@@ -84,8 +79,8 @@ public class PlayerController : MonoBehaviour
                     StopMoving();
                     break;
             }
-            
         }*/
+
         rigidBody.position = new Vector3
         (
             Mathf.Clamp(rigidBody.position.x, boundary.xMin, boundary.xMax),

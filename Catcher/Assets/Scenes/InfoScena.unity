@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 266601457}
   - component: {fileID: 266601456}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1984198066}
-        m_MethodName: InfoPlayTheGame
+        m_MethodName: GoBackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -372,8 +372,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\t\t     Rules\n\nCollect apples to get points\n1 apple = 1 point\nNot
     catching an apple = -1 live\nCatching a mushroom = -1 live\nYou have 3 lives.\nLosing
-    all lives = GameOver\n\nYou move character by pressing and holding buttons on
-    left and right side on the bottom of the screen.\n\nEnjoy the beta testing! :)"
+    all lives = GameOver\n\n\nPressing left button = move left\nPressing right button
+    = move right"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -442,12 +442,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 494848862}
-    characterCount: 300
+    characterCount: 238
     spriteCount: 0
-    spaceCount: 66
-    wordCount: 53
+    spaceCount: 54
+    wordCount: 40
     linkCount: 0
-    lineCount: 15
+    lineCount: 12
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY
+  m_Text: BACK
 --- !u!222 &1161045709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 1984198065}
   - component: {fileID: 1984198066}
   m_Layer: 5
-  m_Name: GraScena
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

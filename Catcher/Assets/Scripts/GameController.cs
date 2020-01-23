@@ -16,15 +16,19 @@ public class GameController : MonoBehaviour
     public float bombSpawnWait;
     public static int score;
     public static int lives;
+    public static float speed;
     public TextMeshPro pointsCounter;
     public TextMeshPro livesCounter;
+    //public TextMeshPro speedTest;
 
     void Start()
     {
         score = 0;
         lives = 3;
+        speed = 50;
         livesCounter.text = "Lives: " + lives;
         pointsCounter.text = "Score: " + score;
+        //speedTest.text = "Speed: " + speed;
         StartCoroutine (SpawnWaves());
         StartCoroutine (SpawnBombs());
     }
@@ -33,6 +37,8 @@ public class GameController : MonoBehaviour
     {
         livesCounter.text = "Lives: " + lives;
         pointsCounter.text = "Score: " + score;
+        //speedTest.text = "Speed: " + speed;
+        spawnWait -= 0.0001f;
     }
 
     IEnumerator SpawnWaves()
