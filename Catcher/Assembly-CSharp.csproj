@@ -62,13 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\backInfoBtn.cs" />
+    <Compile Include="Assets\Scripts\backBtn.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
     <Compile Include="Assets\Scripts\DestroyByTime.cs" />
     <Compile Include="Assets\Scripts\endScore.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\gameoverbtn.cs" />
+    <Compile Include="Assets\Scripts\highscorebtn.cs" />
+    <Compile Include="Assets\Scripts\HighscoresController.cs" />
     <Compile Include="Assets\Scripts\infoButton.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\playbutton.cs" />
